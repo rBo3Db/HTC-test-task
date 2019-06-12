@@ -1,0 +1,26 @@
+.main-menu {
+    @include element('ul') {
+        display: flex;
+        list-style: none; 
+        margin: 0; 
+        padding-left: 0; 
+        font-size: $menu-font;
+        
+    }
+    @include element('element-of-menu') {
+        background: $primary-color;
+        padding: 15px;
+        border-radius: $border-radius $border-radius 0 0;
+        margin: 0 10px 0 0;
+        font-size: $menu-font;
+        cursor: pointer;
+        @include modifier('unactive') {
+            color: rgb(255, 255, 255);
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.38);
+            background: linear-gradient(to top, #1e69ac, #0785b4);
+        }
+    }
+    @include element('link') {
+        text-decoration: $links-text-decoration;
+    }
+}

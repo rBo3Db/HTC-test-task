@@ -1,0 +1,16 @@
+.body {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background:$secondary-color;
+    font-family: $main-font;
+    @media screen and (min-width:500px){
+        height: 100%;
+    }
+    @include element('content-container') {
+        max-width: 500px;
+        width:100%;
+    }
+};

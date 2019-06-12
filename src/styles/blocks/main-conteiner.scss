@@ -1,0 +1,90 @@
+.main-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $primary-color;
+    padding: 16px;
+    overflow-y: auto;
+    @media screen and (min-width: 500px) {
+        justify-content: flex-start;
+        height: 250px;
+    }
+    @media screen and (max-width: 500px) {
+        justify-content: center;
+    }
+    @include element('add-to-friends') {
+        border-radius: $border-radius;
+        height: 30px;
+        border: 0;
+        background: linear-gradient(to top, #e68100, #e65200);
+        color: $primary-color;
+        font-size: $regular-font-size;
+        min-width: 132px;
+        padding:0;
+        cursor: pointer;
+    } 
+    @include element('name-on-personal-page') {
+        font-size: $h1;
+        margin: 5px 0 0;
+        word-wrap: normal;
+    }
+    @include element('location') {
+        margin: 0 0 10px;
+        font-size: 11px;
+        font-family: "Arial";
+        color: rgb(117, 117, 117);
+    }
+    @include element('information-headers') {
+        display: inline-flex;
+        flex-basis: 55%;
+        font-size: $regular-font-size;
+        margin: 5px;
+    }
+    @include element('information') {
+        display: inline-flex;
+        font-size: $regular-font-size;
+        margin: 5px;
+    }
+    @include element('advanced-information-container') {
+        font-size: $regular-font-size;
+        display: flex;
+        flex-direction: column;
+    }
+    @include element('row-of-advanced-information') {
+        font-size: $regular-font-size;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @include element('right-block') {
+        padding-left: 3%;
+        max-width: 300px;
+        width:100%;
+    }
+    @include element('buttons-line') {
+        margin-top: 25px;
+    }
+    @include element('buttons') {
+        border: 1px solid $secondary-color;
+        background-color: $primary-color;
+        padding: 10px;
+        color: $blue-text;
+        border-radius: $border-radius;
+        cursor: pointer;
+        &:hover {
+            color: black;
+            background-color: $secondary-color;
+        }
+    }
+    @include element('interests-line') {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include element('change-input') {
+        margin: 0;
+        padding:0;
+        width: 100px;
+        @include modifier('hide') {
+            display: none;
+        }
+    }   
+}

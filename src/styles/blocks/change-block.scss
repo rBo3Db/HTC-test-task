@@ -1,0 +1,11 @@
+.change-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    @include modifier('hide') {
+        display: none;
+    }
+    @include element('input') {
+        width: 140px;
+    }
+}

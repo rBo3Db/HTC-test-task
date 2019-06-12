@@ -1,0 +1,41 @@
+{
+  "name": "htc-test-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "history": "^4.9.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.11",
+    "webpack": "^4.32.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "babel-loader": "^8.0.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "core-decorators": "^0.20.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash.template": "^4.4.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "path": "^0.12.7",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "@rBo3Db",
+  "license": "MIT",
+  "description": ""
+}

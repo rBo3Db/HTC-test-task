@@ -1,0 +1,30 @@
+.friend {
+    display: flex;
+    flex-basis: 50%;
+    margin: 10px 0;
+    @include element('avatar-small') {
+        margin: 0;
+        padding: 0;
+        max-height: 62px;
+        max-width: 62px;
+    }
+    @include element('name') {
+        font-size: 13px;
+        color: $blue-text;
+        font-weight: bold;
+        text-decoration: underline;  
+        margin: 0 $margin-for-friend;
+    }
+    @include element('location') {
+        font-size: 11px;
+        color: rgb(55, 55, 55);
+        margin: 4px $margin-for-friend;
+    }
+    @include element('online-status') {
+        font-size: 10px;
+        font-family: "Arial";
+        color: rgb(47, 138, 38);
+        font-style: italic;
+        margin: 20px $margin-for-friend;
+    }
+}
